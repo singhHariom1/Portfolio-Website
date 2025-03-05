@@ -16,20 +16,20 @@ export default function Hero() {
         <div className="w-full md:w-1/2">
           <AnimateInView animation="slide-in" className="mb-6">
             <div className="inline-block rounded-full px-3 py-1 text-sm text-accent border border-accent/30 mb-6">
-              Hello, I'm John Doe
+              Full-Stack Developer
             </div>
           </AnimateInView>
           
           <AnimateInView animation="slide-in" delay={300}>
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-              Creating Digital
-              <span className="text-gradient block"> Experiences</span>
+              Crafting Digital
+              <span className="text-gradient block">Solutions</span>
             </h1>
           </AnimateInView>
           
           <AnimateInView animation="slide-in" delay={600}>
             <p className="text-muted-foreground text-lg md:text-xl max-w-xl mb-10">
-              Product designer and developer specialized in creating immersive digital experiences that merge beauty with functionality.
+              Passionate full-stack developer specializing in creating elegant, efficient applications with a strong foundation in data structures and algorithms.
             </p>
           </AnimateInView>
           
@@ -42,10 +42,10 @@ export default function Hero() {
                 View Projects
               </a>
               <a 
-                href="#contact" 
+                href="#resume" 
                 className="px-6 py-3 glass rounded-full font-medium hover-lift"
               >
-                Contact Me
+                Download Resume
               </a>
             </div>
           </AnimateInView>
@@ -61,7 +61,7 @@ export default function Hero() {
               {/* Profile Image */}
               <div className="w-[70%] h-[70%] rounded-full overflow-hidden absolute top-[15%] left-[15%] glass">
                 <div className="w-full h-full bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center text-4xl font-serif font-bold">
-                  <span className="text-gradient">JD</span>
+                  <span className="text-gradient">FS</span>
                 </div>
               </div>
             </div>

@@ -4,27 +4,27 @@ import { AnimateInView } from './ui/motion';
 const timeline = [
   {
     year: '2023',
-    title: 'Senior UX Designer',
-    company: 'Design Studio X',
-    description: 'Led design teams in creating award-winning user experiences for enterprise clients.'
+    title: 'Full-Stack Developer',
+    company: 'Personal Projects & Freelance',
+    description: 'Building full-stack applications using Next.js, React, and Node.js, with a focus on performance and user experience.'
+  },
+  {
+    year: '2022',
+    title: 'Data Structures & Algorithms',
+    company: 'Advanced Studies',
+    description: 'Deep dive into complex algorithms, problem-solving techniques, and efficient data structures.'
   },
   {
     year: '2021',
-    title: 'Product Designer',
-    company: 'Tech Innovations',
-    description: 'Redesigned core user flows resulting in 40% increase in conversion rates.'
+    title: 'Frontend Development',
+    company: 'Self-learning & Bootcamps',
+    description: 'Mastered modern frontend frameworks and libraries including React, Next.js, and Tailwind CSS.'
   },
   {
-    year: '2019',
-    title: 'UI/UX Designer',
-    company: 'Creative Agency',
-    description: 'Crafted interfaces for startups and established brands across various industries.'
-  },
-  {
-    year: '2017',
-    title: 'Web Developer',
-    company: 'Digital Solutions',
-    description: 'Developed responsive websites and web applications using modern technologies.'
+    year: '2020',
+    title: 'Computer Science Fundamentals',
+    company: 'Academic Studies',
+    description: 'Established strong foundations in programming principles, databases, and computer science theory.'
   }
 ];
 
@@ -45,7 +45,7 @@ export default function About() {
         
         <AnimateInView delay={100}>
           <p className="section-subtitle">
-            My journey in design and development has been fueled by a passion for creating intuitive, engaging experiences.
+            Passionate about building efficient, scalable applications with clean code and intuitive user experiences.
           </p>
         </AnimateInView>
         
@@ -55,27 +55,27 @@ export default function About() {
               <h3 className="text-2xl font-serif font-semibold">My Story</h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  With over 7 years of experience in the design and development industry, I've cultivated a holistic approach to creating digital experiences that are both beautiful and functional.
+                  As a full-stack developer with a passion for building elegant, efficient solutions, I combine technical expertise with creative problem-solving to deliver exceptional digital experiences.
                 </p>
                 <p>
-                  My philosophy centers on minimalism and purpose-driven design. Every element should serve a clear function while contributing to the overall aesthetic harmony.
+                  My journey in technology began with a strong foundation in computer science fundamentals, data structures, and algorithms, which has enabled me to approach complex problems with confidence and analytical thinking.
                 </p>
                 <p>
-                  I believe the best digital products arise from deep collaboration between designers, developers, and users. My process emphasizes research, iteration, and continuous refinement.
+                  I believe in continuous learning and staying current with emerging technologies and best practices. My commitment to clean, maintainable code and user-centered design principles guides every project I undertake.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3 mt-6">
-                <span className="px-3 py-1 glass text-sm rounded-full">UI/UX Design</span>
-                <span className="px-3 py-1 glass text-sm rounded-full">Web Development</span>
-                <span className="px-3 py-1 glass text-sm rounded-full">Product Strategy</span>
-                <span className="px-3 py-1 glass text-sm rounded-full">Visual Design</span>
+                <span className="px-3 py-1 glass text-sm rounded-full">Full-Stack Development</span>
+                <span className="px-3 py-1 glass text-sm rounded-full">Data Structures & Algorithms</span>
+                <span className="px-3 py-1 glass text-sm rounded-full">Problem Solving</span>
+                <span className="px-3 py-1 glass text-sm rounded-full">Clean Code</span>
               </div>
             </div>
           </AnimateInView>
           
           <AnimateInView animation="slide-up" delay={200}>
             <div>
-              <h3 className="text-2xl font-serif font-semibold mb-8">Experience</h3>
+              <h3 className="text-2xl font-serif font-semibold mb-8">Experience & Learning</h3>
               <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-accent/30 before:to-transparent">
                 {timeline.map((item, index) => (
                   <div key={index} className="relative flex items-start group">

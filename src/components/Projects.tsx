@@ -1,39 +1,39 @@
 
 import { useState } from 'react';
 import { AnimateInView, AnimateHover } from './ui/motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, Code } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const projects = [
   {
-    title: 'Digital Experience Platform',
-    description: 'A comprehensive platform designed to deliver personalized user experiences at scale.',
-    tags: ['UI/UX', 'Frontend', 'React'],
-    image: 'https://images.unsplash.com/photo-1481487196290-c152efe083f5?q=80&w=1920&auto=format&fit=crop',
+    title: 'Algorithm Visualizer',
+    description: 'Interactive platform for visualizing complex data structures and algorithms with step-by-step execution and time complexity analysis.',
+    tags: ['DSA', 'React', 'TypeScript'],
+    image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1920&auto=format&fit=crop',
     link: '#',
     github: '#',
   },
   {
-    title: 'E-Commerce Redesign',
-    description: 'Redesigned user experience for a leading e-commerce platform increasing conversion by 35%.',
-    tags: ['UI/UX', 'Shopify', 'Design System'],
-    image: 'https://images.unsplash.com/photo-1523726491678-bf852e717f6a?q=80&w=1920&auto=format&fit=crop',
+    title: 'Full-Stack E-Learning Platform',
+    description: 'Complete learning management system with user authentication, course creation, progress tracking, and interactive content delivery.',
+    tags: ['Full-Stack', 'Next.js', 'Appwrite'],
+    image: 'https://images.unsplash.com/photo-1629752187687-3d3c7ea3a21b?q=80&w=1920&auto=format&fit=crop',
     link: '#',
     github: '#',
   },
   {
-    title: 'Financial Dashboard',
-    description: 'Interactive dashboard visualizing complex financial data for enterprise decision-makers.',
-    tags: ['Dashboard', 'Data Visualization', 'React'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1920&auto=format&fit=crop',
+    title: 'Pathfinding Visualizer',
+    description: 'Tool for visualizing various pathfinding algorithms like Dijkstra, A*, and BFS with interactive grid and customizable obstacles.',
+    tags: ['DSA', 'JavaScript', 'Algorithms'],
+    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1920&auto=format&fit=crop',
     link: '#',
     github: '#',
   },
   {
-    title: 'Health & Wellness App',
-    description: 'Mobile application focused on mental health tracking and mindfulness practices.',
-    tags: ['Mobile App', 'Health Tech', 'React Native'],
-    image: 'https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=1920&auto=format&fit=crop',
+    title: 'Real-time Collaboration App',
+    description: 'Modern application enabling real-time document editing, commenting, and team collaboration with robust authentication and permissions.',
+    tags: ['Full-Stack', 'React', 'Node.js'],
+    image: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=1920&auto=format&fit=crop',
     link: '#',
     github: '#',
   },
@@ -41,10 +41,9 @@ const projects = [
 
 const categories = [
   'All',
-  'UI/UX',
-  'Frontend',
-  'Mobile App',
-  'Design System',
+  'DSA',
+  'Full-Stack',
+  'Algorithms',
 ];
 
 export default function Projects() {
@@ -70,7 +69,7 @@ export default function Projects() {
         
         <AnimateInView delay={100}>
           <p className="section-subtitle">
-            A selection of my work across different industries and challenges.
+            Showcasing my work in data structures, algorithms, and full-stack development.
           </p>
         </AnimateInView>
         
@@ -145,6 +144,17 @@ export default function Projects() {
                         <Github className="w-4 h-4" />
                         <span>Source Code</span>
                       </a>
+                      {project.tags.includes('DSA') && (
+                        <a 
+                          href="#" 
+                          className="flex items-center gap-1 text-sm hover:text-accent transition-colors"
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          <Code className="w-4 h-4" />
+                          <span>Algorithm</span>
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>

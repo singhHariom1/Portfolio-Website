@@ -3,20 +3,20 @@ import { AnimateInView } from './ui/motion';
 import { cn } from '@/lib/utils';
 
 const skills = [
-  { name: 'UI/UX Design', level: 90, icon: '✏️' },
-  { name: 'Frontend Development', level: 85, icon: '💻' },
+  { name: 'Next.js', level: 90, icon: '⚡' },
   { name: 'React / React Native', level: 85, icon: '⚛️' },
-  { name: 'Responsive Design', level: 95, icon: '📱' },
-  { name: 'Design Systems', level: 80, icon: '🎨' },
-  { name: 'User Research', level: 75, icon: '🔍' },
-  { name: 'Prototyping', level: 90, icon: '🖌️' },
-  { name: 'Figma / Adobe XD', level: 95, icon: '🎯' },
+  { name: 'Node.js & Express', level: 80, icon: '🚀' },
+  { name: 'Data Structures & Algorithms', level: 85, icon: '🧩' },
+  { name: 'SQL & Databases', level: 75, icon: '💾' },
+  { name: 'TypeScript', level: 90, icon: '📝' },
+  { name: 'Appwrite & Firebase', level: 80, icon: '🔥' },
+  { name: 'Git & GitHub', level: 95, icon: '📊' },
 ];
 
 const technologies = [
-  'JavaScript', 'TypeScript', 'React', 'Next.js', 'Vue.js', 
-  'Tailwind CSS', 'Figma', 'Sketch', 'Adobe XD', 'Photoshop', 
-  'Illustrator', 'Node.js', 'GraphQL', 'REST APIs', 'Git',
+  'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 
+  'Express', 'SQL', 'MongoDB', 'Appwrite', 'Tailwind CSS', 
+  'Figma', 'Git', 'GitHub', 'REST APIs', 'GraphQL', 'Redux',
 ];
 
 export default function Skills() {
@@ -36,7 +36,7 @@ export default function Skills() {
         
         <AnimateInView delay={100}>
           <p className="section-subtitle">
-            A comprehensive overview of my technical skills and expertise.
+            A comprehensive overview of my technical expertise in full-stack development.
           </p>
         </AnimateInView>
         
