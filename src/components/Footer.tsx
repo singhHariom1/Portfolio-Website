@@ -1,5 +1,5 @@
 
-import { Heart } from 'lucide-react';
+import { Heart, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -39,7 +39,21 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-white/10 mt-12 pt-8 flex justify-center">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col items-center">
+          <div className="flex gap-4 mb-6">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-accent/20 transition-colors">
+              <Github className="w-5 h-5" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-accent/20 transition-colors">
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-accent/20 transition-colors">
+              <Twitter className="w-5 h-5" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-accent/20 transition-colors">
+              <Instagram className="w-5 h-5" />
+            </a>
+          </div>
           <p className="text-sm text-muted-foreground flex items-center">
             Designed & built with <Heart className="w-4 h-4 mx-1 text-accent" /> in 2023
           </p>

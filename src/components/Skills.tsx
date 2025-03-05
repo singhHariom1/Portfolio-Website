@@ -1,24 +1,23 @@
 
 import { AnimateInView } from './ui/motion';
-import { cn } from '@/lib/utils';
 
 const technologies = [
-  { name: 'JavaScript', icon: '📜' },
-  { name: 'TypeScript', icon: '📘' },
-  { name: 'React', icon: '⚛️' },
-  { name: 'Next.js', icon: '⚡' },
-  { name: 'Node.js', icon: '🚀' },
-  { name: 'Express', icon: '🔌' },
-  { name: 'SQL', icon: '💾' },
-  { name: 'MongoDB', icon: '🍃' },
-  { name: 'Appwrite', icon: '📊' },
-  { name: 'Tailwind CSS', icon: '🎨' },
-  { name: 'Figma', icon: '🖌️' },
-  { name: 'Git', icon: '📋' },
-  { name: 'GitHub', icon: '🐙' },
-  { name: 'REST APIs', icon: '🔄' },
-  { name: 'GraphQL', icon: '⬢' },
-  { name: 'Redux', icon: '🔄' },
+  { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+  { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+  { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+  { name: 'Next.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+  { name: 'Node.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+  { name: 'Express', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+  { name: 'SQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+  { name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
+  { name: 'Appwrite', logo: 'https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg' },
+  { name: 'Tailwind CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' },
+  { name: 'Figma', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+  { name: 'Git', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+  { name: 'GitHub', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+  { name: 'REST APIs', logo: 'https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg' },
+  { name: 'GraphQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg' },
+  { name: 'Redux', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg' },
 ];
 
 export default function Skills() {
@@ -56,7 +55,11 @@ export default function Skills() {
                 delay={300 + (index * 50)}
               >
                 <div className="glass px-4 py-6 rounded-xl text-center hover:bg-accent/20 transition-colors duration-300 flex flex-col items-center justify-center gap-3">
-                  <span className="text-3xl">{tech.icon}</span>
+                  <img 
+                    src={tech.logo} 
+                    alt={`${tech.name} logo`} 
+                    className="w-12 h-12 object-contain dark:invert-[.25]" 
+                  />
                   <span className="font-medium">{tech.name}</span>
                 </div>
               </AnimateInView>
