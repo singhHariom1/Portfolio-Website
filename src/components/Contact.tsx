@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { AnimateInView } from './ui/motion';
-import { Mail, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Send, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { toast } from 'sonner';
 
@@ -77,6 +77,9 @@ export default function Contact() {
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-accent/20 transition-colors">
                     <Twitter className="w-5 h-5" />
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-accent/20 transition-colors">
+                    <Instagram className="w-5 h-5" />
                   </a>
                 </div>
               </div>

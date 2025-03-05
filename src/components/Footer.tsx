@@ -33,6 +33,7 @@ export default function Footer() {
                 <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">GitHub</a></li>
                 <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">LinkedIn</a></li>
                 <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Twitter</a></li>
+                <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Instagram</a></li>
                 <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Email</a></li>
               </ul>
             </div>
