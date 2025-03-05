@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { AnimatePresence } from './ui/motion';
 import { cn } from '@/lib/utils';
+import ThemeToggle from './ThemeToggle';
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -57,7 +58,8 @@ export default function Navbar() {
               <span className="text-gradient">Portfolio.</span>
             </a>
           </div>
-          <div className="flex lg:hidden">
+          <div className="flex lg:hidden items-center gap-4">
+            <ThemeToggle />
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
@@ -86,7 +88,8 @@ export default function Navbar() {
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-4">
+            <ThemeToggle />
             <a 
               href="#contact" 
               className="glass text-sm font-semibold leading-6 text-white px-4 py-2 rounded-full hover:bg-white/10 transition-all duration-300"

@@ -2,21 +2,23 @@
 import { AnimateInView } from './ui/motion';
 import { cn } from '@/lib/utils';
 
-const skills = [
-  { name: 'Next.js', level: 90, icon: '⚡' },
-  { name: 'React / React Native', level: 85, icon: '⚛️' },
-  { name: 'Node.js & Express', level: 80, icon: '🚀' },
-  { name: 'Data Structures & Algorithms', level: 85, icon: '🧩' },
-  { name: 'SQL & Databases', level: 75, icon: '💾' },
-  { name: 'TypeScript', level: 90, icon: '📝' },
-  { name: 'Appwrite & Firebase', level: 80, icon: '🔥' },
-  { name: 'Git & GitHub', level: 95, icon: '📊' },
-];
-
 const technologies = [
-  'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 
-  'Express', 'SQL', 'MongoDB', 'Appwrite', 'Tailwind CSS', 
-  'Figma', 'Git', 'GitHub', 'REST APIs', 'GraphQL', 'Redux',
+  { name: 'JavaScript', icon: '📜' },
+  { name: 'TypeScript', icon: '📘' },
+  { name: 'React', icon: '⚛️' },
+  { name: 'Next.js', icon: '⚡' },
+  { name: 'Node.js', icon: '🚀' },
+  { name: 'Express', icon: '🔌' },
+  { name: 'SQL', icon: '💾' },
+  { name: 'MongoDB', icon: '🍃' },
+  { name: 'Appwrite', icon: '📊' },
+  { name: 'Tailwind CSS', icon: '🎨' },
+  { name: 'Figma', icon: '🖌️' },
+  { name: 'Git', icon: '📋' },
+  { name: 'GitHub', icon: '🐙' },
+  { name: 'REST APIs', icon: '🔄' },
+  { name: 'GraphQL', icon: '⬢' },
+  { name: 'Redux', icon: '🔄' },
 ];
 
 export default function Skills() {
@@ -40,59 +42,22 @@ export default function Skills() {
           </p>
         </AnimateInView>
         
-        {/* Core skills with progress bars */}
-        <div className="mb-20">
-          <AnimateInView delay={200} className="mb-10">
-            <h3 className="text-2xl font-serif font-semibold">Core Expertise</h3>
-          </AnimateInView>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12">
-            {skills.map((skill, index) => (
-              <AnimateInView 
-                key={index} 
-                animation="slide-up" 
-                delay={300 + (index * 50)}
-              >
-                <div className="space-y-2">
-                  <div className="flex justify-between items-center">
-                    <div className="flex items-center gap-2">
-                      <span className="text-xl">{skill.icon}</span>
-                      <span className="font-medium">{skill.name}</span>
-                    </div>
-                    <span className="text-sm text-accent">{skill.level}%</span>
-                  </div>
-                  <div className="h-2 w-full bg-secondary rounded-full overflow-hidden">
-                    <div 
-                      className="h-full bg-accent rounded-full transition-all duration-1000 ease-out origin-left"
-                      style={{ width: `${skill.level}%`, transform: 'scaleX(0)', animationFillMode: 'forwards' }}
-                      onAnimationStart={(e) => {
-                        setTimeout(() => {
-                          e.currentTarget.style.transform = 'scaleX(1)';
-                        }, 100);
-                      }}
-                    ></div>
-                  </div>
-                </div>
-              </AnimateInView>
-            ))}
-          </div>
-        </div>
-        
         {/* Technologies */}
         <div>
           <AnimateInView delay={200} className="mb-10">
             <h3 className="text-2xl font-serif font-semibold">Technologies</h3>
           </AnimateInView>
           
-          <div className="flex flex-wrap gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {technologies.map((tech, index) => (
               <AnimateInView 
                 key={index} 
                 animation="fade-in" 
                 delay={300 + (index * 50)}
               >
-                <div className="glass px-4 py-2 rounded-full text-sm font-medium hover:bg-accent/20 transition-colors duration-300">
-                  {tech}
+                <div className="glass px-4 py-6 rounded-xl text-center hover:bg-accent/20 transition-colors duration-300 flex flex-col items-center justify-center gap-3">
+                  <span className="text-3xl">{tech.icon}</span>
+                  <span className="font-medium">{tech.name}</span>
                 </div>
               </AnimateInView>
             ))}
