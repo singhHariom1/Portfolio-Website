@@ -3,25 +3,25 @@ import { AnimateInView } from './ui/motion';
 
 const timeline = [
   {
-    year: '2023',
+    year: '2024',
     title: 'Full-Stack Developer',
     company: 'Personal Projects & Freelance',
     description: 'Building full-stack applications using Next.js, React, and Node.js, with a focus on performance and user experience.'
   },
   {
-    year: '2022',
+    year: '2023',
     title: 'Data Structures & Algorithms',
     company: 'Advanced Studies',
     description: 'Deep dive into complex algorithms, problem-solving techniques, and efficient data structures.'
   },
   {
-    year: '2021',
+    year: '2022',
     title: 'Frontend Development',
     company: 'Self-learning & Bootcamps',
     description: 'Mastered modern frontend frameworks and libraries including React, Next.js, and Tailwind CSS.'
   },
   {
-    year: '2020',
+    year: '2021',
     title: 'Computer Science Fundamentals',
     company: 'Academic Studies',
     description: 'Established strong foundations in programming principles, databases, and computer science theory.'
