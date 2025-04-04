@@ -69,7 +69,7 @@ export default function Hero() {
               {/* Profile Image */}
               <div className="w-[70%] h-[70%] rounded-full overflow-hidden absolute top-[15%] left-[15%] glass">
                 <img
-                  src="/public/profile.jpg"
+                  src="/profile.jpg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />

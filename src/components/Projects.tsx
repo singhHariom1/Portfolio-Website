@@ -42,7 +42,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1920&auto=format&fit=crop",
     link: "#",
-    github: "#",
+    github: "https://github.com/singhHariom1/Portfolio-Website",
   },
 ];
 

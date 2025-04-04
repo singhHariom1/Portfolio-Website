@@ -3,6 +3,7 @@ import { AnimateInView } from "./ui/motion";
 import { Mail, Send, Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -20,16 +21,27 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success("Message sent successfully! I'll get back to you soon.");
-      setFormData({ name: "", email: "", message: "" });
-      setIsSubmitting(false);
-    }, 1500);
+    emailjs
+      .send(
+        "service_n74ptes", // Replace with actual Service ID
+        "template_mahb2ag", // Template ID
+        formData, // Data object with name, email, message
+        "xWBrdzi5-p54bp3ED" // Public Key
+      )
+      .then(() => {
+        toast.success("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch(() => {
+        toast.error("Failed to send message. Please try again.");
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   return (
