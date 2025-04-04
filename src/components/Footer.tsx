@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#home" className="text-2xl font-serif font-bold">
-            <span className="text-gradient">Code by Om.</span>
+            <span className="text-gradient">BinaryToBarbell.</span>
 
 
             </a>
