@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimateInView, AnimateHover } from "./ui/motion";
-import { ExternalLink, Github, Code } from "lucide-react";
+import { ExternalLink, Github, } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const projects = [
@@ -41,7 +41,7 @@ const projects = [
     tags: ["React", "Tailwind", "Full-Stack"],
     image:
       "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1920&auto=format&fit=crop",
-    link: "#",
+    link: "https://barbelltobinary.netlify.app/",
     github: "https://github.com/singhHariom1/Portfolio-Website",
   },
 ];
