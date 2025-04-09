@@ -11,8 +11,8 @@ const projects = [
     tags: ["Full-Stack", "React", "Node.js", "MongoDB", "Express"],
     image:
       "https://images.unsplash.com/photo-1629752187687-3d3c7ea3a21b?q=80&w=1920&auto=format&fit=crop",
-    link: "#",
-    github: "#",
+    link: "https://lms-frontend-6pqj.onrender.com/",
+    github: "https://github.com/singhHariom1/ElevateX-LMS",
   },
   {
     title: "Real-time Chat Application",
