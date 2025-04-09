@@ -50,7 +50,7 @@ npm run dev
 
 ## 🚀 Deployment
 
-Deployed on: [https://your-portfolio-site.vercel.app](https://your-portfolio-site.vercel.app)
+Deployed on: [https://your-portfolio-site.vercel.app]([https://barbelltobinary.netlify.app/])
 
 ---
 
