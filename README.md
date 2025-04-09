@@ -50,7 +50,8 @@ npm run dev
 
 ## 🚀 Deployment
 
-Deployed on: [https://your-portfolio-site.vercel.app]([https://barbelltobinary.netlify.app/])
+🔧 Made with ❤️ by Hariom Singh  
+[🌐 Portfolio](https://barbelltobinary.netlify.app/)
 
 ---
 
