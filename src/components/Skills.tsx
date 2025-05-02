@@ -10,6 +10,14 @@ const technologies = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
   {
+    name: "C++",
+    logo: "https://cdn.worldvectorlogo.com/logos/c.svg",
+  },
+  {
+    name: "Python",
+    logo: "https://cdn.worldvectorlogo.com/logos/python-3.svg",
+  },
+  {
     name: "React",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
