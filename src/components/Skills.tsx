@@ -6,6 +6,10 @@ const technologies = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
+    name: "TypeScript",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+  {
     name: "React",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },

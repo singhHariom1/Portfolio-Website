@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimateInView, AnimateHover } from "./ui/motion";
-import { ExternalLink, Github, } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const projects = [
@@ -25,16 +25,6 @@ const projects = [
     github: "https://github.com/singhHariom1/FullStack-Chat-App",
   },
   {
-    title: "Sorting Visualizer",
-    description:
-      "Interactive platform for visualizing common data structures like arrays, linked lists, trees, and graphs with step-by-step operations.",
-    tags: ["DSA", "React", "Algorithms"],
-    image:
-      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1920&auto=format&fit=crop",
-    link: "https://sortingvisualizer99.netlify.app/",
-    github: "https://github.com/singhHariom1/Sorting-Visualizer",
-  },
-  {
     title: "Portfolio Website",
     description:
       "A modern and responsive portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
@@ -43,6 +33,25 @@ const projects = [
       "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1920&auto=format&fit=crop",
     link: "https://barbelltobinary.netlify.app/",
     github: "https://github.com/singhHariom1/Portfolio-Website",
+  },
+  {
+    title: "ChartNexus Dashboard",
+    description:
+      "A data visualization dashboard displaying real-time cryptocurrency metrics, weather updates, stock charts, and sector-wise insights using React, Vite, and Chart.js.",
+    tags: ["Frontend", "React", "MERN", "API Integration"],
+    image: "https://plus.unsplash.com/premium_photo-1681487769650-a0c3fbaed85a?q=80&w=2155&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "https://chart-nexus.vercel.app/",
+    github: "https://github.com/singhHariom1/ChartNexus",
+  },
+  {
+    title: "Sorting Visualizer",
+    description:
+      "Interactive platform for visualizing common data structures like arrays, linked lists, trees, and graphs with step-by-step operations.",
+    tags: ["DSA", "React", "Algorithms"],
+    image:
+      "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1920&auto=format&fit=crop",
+    link: "https://sortingvisualizer99.netlify.app/",
+    github: "https://github.com/singhHariom1/Sorting-Visualizer",
   },
 ];
 

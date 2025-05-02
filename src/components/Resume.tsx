@@ -26,7 +26,7 @@ export default function Resume() {
         <AnimateInView animation="scale-in" delay={300} className="flex justify-center mt-8">
           <a 
             href="/resume.pdf" 
-            download="FullStack_Developer_Resume.pdf"
+            download="Hariom_Singh_Resume.pdf"
             className="px-8 py-4 bg-accent text-accent-foreground rounded-full font-medium hover-lift flex items-center gap-3 shadow-lg"
           >
             <FileDown className="w-5 h-5" />
