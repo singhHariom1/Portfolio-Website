@@ -5,6 +5,16 @@ import { cn } from "@/lib/utils";
 
 const projects = [
   {
+    title: "Studysync-AI",
+    description:
+      "AI-powered doubt solving, resource recommendations, and productivity tools—all in one dashboard.",
+    tags: ["Full-Stack", "React", "Node.js", "MongoDB", "Express","Generative AI"],
+    image:
+      "Studysync-AI.png",
+    link: "https://studysync-ai-nu.vercel.app/",
+    github: "https://github.com/singhHariom1/Studysync-AI",
+  },
+  {
     title: "Learning Management System (LMS)",
     description:
       "A comprehensive LMS platform built with MERN stack featuring course management, student progress tracking, and interactive content delivery.",
