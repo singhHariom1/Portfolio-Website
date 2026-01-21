@@ -95,7 +95,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/stoic.liftss/"
+                    href="https://www.instagram.com/barbell2binary/"
                     target="_blank"
                     className="text-sm text-muted-foreground hover:text-accent transition-colors"
                   >
